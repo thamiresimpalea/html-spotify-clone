@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #000000;    
 }
 
 .sidebar {
@@ -86,6 +86,13 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: none;
+    transition-duration: 0.3s;
+}
+
+.library .library__button:hover {
+    color: #ffffff;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .library .library__button .fa {
@@ -93,8 +100,22 @@ body {
 }
 
 .library .library__content .fa-plus {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     padding: 8px;
+    transition-duration: 0.3s;
+}
+
+.library .library__content .fa-plus:hover {
+    background-color: #191919;
+    color: #ffffff;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .section-playlist {
@@ -129,15 +150,20 @@ body {
 .section-playlist__content .section-playlist__button {
     display: flex;
     justify-content: center;
-    padding: 8px;
     width: 114px;
+    padding: 8px;
     border: 0;
     border-radius: 20px;
     text-decoration: none;
     text-transform: none;
     background-color: #ffffff;
     color: #000000;
+    font-size: 14px;
     font-family: "Circular Std Bold";
+}
+
+.library .cookies {
+    margin: 30px 0;
 }
 
 .library .cookies a {
@@ -151,13 +177,71 @@ body {
 }
 
 .library .language__button {
-    width: 170px;
-    padding: 8px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 175px;
+    padding: 8px;
+    gap: 5px;
     background-color: transparent;
     color: #ffffff;
     border: 1px solid #878787;
     border-radius: 20px;
+    font-size: 14px;
     font-family: "Circular Std Bold";
+}
+.library .language__button:hover {
+    width: 185px;
+    font-size: 15px;
+    border: 1px solid #ffffff;
     cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    min-width: 750px;
+    height: 50px;
+    padding: 11px 20px;
+    margin: 8px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    color: #ffffff;
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.banner .title {
+    font-size: 14px;
+    font-family: "Circular Std Bold";
+}
+
+.banner .subtitle {
+    font-size: 16px;
+    font-family: "Circular Std Light";
+}
+
+.banner .banner__button {
+    display: flex;
+    min-width: 170px;
+    width: 190px;
+    height: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-family: "Circular Std Bold";
 }
