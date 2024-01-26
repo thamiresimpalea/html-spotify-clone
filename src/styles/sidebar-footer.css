@@ -202,9 +202,9 @@ body {
     justify-content: space-between;
     position: fixed;
     min-width: 750px;
-    height: 50px;
     padding: 11px 20px;
     margin: 8px;
+    gap: 15px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -216,6 +216,7 @@ body {
 .banner .text {
     display: flex;
     flex-direction: column;
+    margin: 5px 0;
     color: #ffffff;
     gap: 10px;
 }
