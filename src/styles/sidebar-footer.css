@@ -7,8 +7,8 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 8px;
     width: 300px;
+    padding: 8px;
 }
 
 .sidebar__block {
@@ -16,15 +16,13 @@ body {
     border-radius: 8px;
 }
 
-.nav {
-    padding: 20px 0 0 25px;
+.sidebar nav {
+    padding: 20px 25px 0;
+    font-size: 16px;
+    font-family: var(--font-title);
 }
 
-.nav .logo {
-    display: flex;
-}
-
-.nav .logo img {
+.sidebar nav .logo img {
     width: 80px;
 }
 
@@ -41,13 +39,11 @@ body {
     align-items: center;
     gap: 20px;
     color: #b3b3b3;
-    font-size: 16px;
-    font-family: "Circular Std Bold";
     text-decoration: none;
     transition-duration: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar nav ul li a:hover {
     color: #ffffff;
     transition-duration: 0.3s;
 }
@@ -56,7 +52,11 @@ body {
     font-size: 24px;
 }
 
-.library {
+.sidebar button {
+    font-family: var(--font-title);
+}
+
+.sidebar .library {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -64,42 +64,42 @@ body {
     padding: 8px 16px;
     color: #b3b3b3;
     font-size: 14px;
-    font-family: "Circular Std Light";
+    font-family: var(--font-text);
 }
 
-.library .library__content {
+
+.sidebar .library__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.library .library__button {
+.sidebar .library__header button {
     display: flex;
     padding: 10px;
     gap: 15px;
     align-items: flex-end;
-    background-color: transparent;
     border: 0;
+    background-color: transparent;
     color: #b3b3b3;
     font-size: 16px;
-    font-family: "Circular Std Bold";
     text-align: center;
     text-decoration: none;
     text-transform: none;
     transition-duration: 0.3s;
 }
 
-.library .library__button:hover {
+.sidebar .library__header button:hover {
     color: #ffffff;
     transition-duration: 0.3s;
     cursor: pointer;
 }
 
-.library .library__button .fa {
+.sidebar .library__header button .fa {
     font-size: 24px;
 }
 
-.library .library__content .fa-plus {
+.sidebar .library__header .fa-plus {
     display: flex;
     width: 18px;
     height: 18px;
@@ -110,7 +110,7 @@ body {
     transition-duration: 0.3s;
 }
 
-.library .library__content .fa-plus:hover {
+.sidebar .library__header .fa-plus:hover {
     background-color: #191919;
     color: #ffffff;
     border-radius: 100%;
@@ -118,7 +118,7 @@ body {
     cursor: pointer;
 }
 
-.section-playlist {
+.sidebar .section-playlist {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -129,25 +129,25 @@ body {
     color: #b3b3b3;
 }
 
-.section-playlist .section-playlist__content {
+.sidebar .section-playlist__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.section-playlist__content .text {
+.sidebar .section-playlist__content .text {
     display: flex;
     flex-direction: column;
     gap: 15px;
     color: #ffffff;
 }
 
-.section-playlist__content .title {
+.sidebar .section-playlist__content .title {
     font-size: 16px;
-    font-family: "Circular Std Bold";
+    font-family: var(--font-title);
 }
 
-.section-playlist__content .section-playlist__button {
+.sidebar .section-playlist__content button {
     display: flex;
     justify-content: center;
     width: 114px;
@@ -159,24 +159,23 @@ body {
     background-color: #ffffff;
     color: #000000;
     font-size: 14px;
-    font-family: "Circular Std Bold";
 }
 
-.library .cookies {
+.sidebar .library .cookies {
     margin: 30px 0;
 }
 
-.library .cookies a {
+.sidebar .library .cookies a {
     color: #b3b3b3;
     font-size: 12px;
     text-decoration: none;
 }
 
-.library .cookies a:hover {
+.sidebar .library .cookies a:hover {
     text-decoration: underline;
 }
 
-.library .language__button {
+.sidebar .library .language button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,9 +187,9 @@ body {
     border: 1px solid #878787;
     border-radius: 20px;
     font-size: 14px;
-    font-family: "Circular Std Bold";
+    font-family: var(--font-title);
 }
-.library .language__button:hover {
+.sidebar .library .language button:hover {
     width: 185px;
     font-size: 15px;
     border: 1px solid #ffffff;
@@ -200,11 +199,11 @@ body {
 .banner {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     min-width: 750px;
     padding: 11px 20px;
     margin: 8px;
     gap: 15px;
+    position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
@@ -219,19 +218,16 @@ body {
     margin: 5px 0;
     color: #ffffff;
     gap: 10px;
+    font-size: 16px;
+    font-family: var(--font-text);
 }
 
 .banner .title {
     font-size: 14px;
-    font-family: "Circular Std Bold";
+    font-family: var(--font-title);
 }
 
-.banner .subtitle {
-    font-size: 16px;
-    font-family: "Circular Std Light";
-}
-
-.banner .banner__button {
+.banner button {
     display: flex;
     min-width: 170px;
     width: 190px;
@@ -244,5 +240,5 @@ body {
     background-color: #ffffff;
     color: #000000;
     font-size: 16px;
-    font-family: "Circular Std Bold";
+    font-family: var(--font-title);
 }

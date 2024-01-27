@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Spotify</title>
 	<link rel="stylesheet" href="./src/styles/reset.css">
+	<link rel="stylesheet" href="./src/styles/vars.css">
 	<link rel="stylesheet" href="./src/styles/sidebar-footer.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
 </head>
 <body>
 	<div class="sidebar">
-		<nav class="sidebar__block nav">
+		<nav class="sidebar__block">
 			<div class="logo">
 				<a href="">
 					<img src="./src/assets/icons/logo-spotify.png" alt="Spotify">
@@ -33,8 +34,8 @@
 			</ul>
 		</nav>
 		<div class="sidebar__block library">
-			<div class="library__content">
-				<button class="library__button">
+			<div class="library__header">
+				<button>
 					<span class="fa fa-bars"></span>
 					<span>Sua Biblioteca</span>
 				</button>
@@ -46,14 +47,14 @@
 						<span class="title">Crie sua primeira playlist</span>
 						<span class="subtitle">É fácil, vamos te ajudar.</span>
 					</div>
-					<button class="section-playlist__button">Criar playlist</button>
+					<button>Criar playlist</button>
 				</div>
 			</section>
 			<div class="cookies">
 				<a href="">Cookies</a>
 			</div>
 			<div class="language">
-				<button class="language__button">
+				<button>
 					<span class="fa fa-globe"></span>
 					<span>Português do Brasil</span>
 				</button>
@@ -66,7 +67,7 @@
 				<span class="title">Testar o Premium de graça</span>
 				<span class="subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
 			</div>
-			<button class="banner__button">Inscreva-se grátis</button>
+			<button>Inscreva-se grátis</button>
 		</div>
 	</footer>
 </body>
