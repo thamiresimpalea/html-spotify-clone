@@ -1,0 +1,98 @@
+.container {
+	max-width: 80vw;
+	height: 100vh;
+	margin-left: 316px;
+	padding: 8px 8px 0 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.25rem;
+	padding: 8px 16px;
+	border-radius: 8px;
+	background-color: #121212;
+}
+
+header .navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 8px;
+}
+
+.arrow-left, .arrow-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	border: none;
+	border-radius: 100%;
+	background: #131313;
+	background-color: rgba(0, 0, 07);
+	cursor: pointer;
+}
+
+header .authentication {
+	display: flex;
+	align-items: center;
+}
+
+header .search {
+	display: flex;
+	align-items: center;
+	width: 345px;
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 500px;
+	background-color: #242422;
+}
+
+header .search img {
+	width: 16px;
+	height: 16px;
+	padding: 5px;
+}
+
+header .search input {
+	background: transparent;
+	border: none;
+	padding-right: 36px;
+	color: #ffffff;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	outline: none;
+	font-family: var(--font-subtitle);
+}
+
+header .authentication {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+header .authentication button {
+	font-family: var(--font-title);
+	border: none;
+}
+
+header .authentication .subscribe {
+	width: 105px;
+	height: 48px;
+	font-size: 16px;
+	background-color: transparent;
+	color: #a7a7a7;
+	cursor: pointer;
+}
+
+header .authentication .login {
+	width: 100px;
+	height: 48px;
+	border-radius: 40px;
+	font-size: 16px;
+	color: #000000;
+	cursor: pointer;
+}
