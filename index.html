@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./src/styles/vars.css">
 	<link rel="stylesheet" href="./src/styles/sidebar-footer.css">
 	<link rel="stylesheet" href="./src/styles/main-content.css">
+	<link rel="stylesheet" href="./src/styles/media-queries.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
 </head>
@@ -82,6 +83,73 @@
 					<button class="login">Entrar</button>
 				</div>
 			</header>
+
+			<div class="playlist-content">
+				<div id="playlist-results">
+					<h2>Navegar por todas as seções</h2>
+					<div class="offer__scroll-container">
+						<div class="offer__list">
+							<section class="offer__list-item">
+								<a href="" class="cards">
+									<div class="cards card1">
+										<img src="./src/assets/playlist/1.jpeg" alt="">
+										<span>Boas festas</span>
+									</div>
+								</a>
+								<a href="" class="cards">
+									<div class="cards card2">
+										<img src="./src/assets/playlist/2.png" alt="">
+										<span>Feitos para você</span>
+									</div>
+								</a>
+								<a href="" class="cards">
+									<div class="cards card3">
+										<img src="./src/assets/playlist/3.jpeg" alt="">
+										<span>Lançamentos</span>
+									</div>
+								</a>
+								<a href="" class="cards">
+									<div class="cards card4">
+										<img src="./src/assets/playlist/4.jpeg" alt="">
+										<span>Creators</span>
+									</div>
+								</a>
+								<a href="" class="cards">
+									<div class="cards card5">
+										<img src="./src/assets/playlist/5.jpeg" alt="">
+										<span>Podcasts</span>
+									</div>
+								</a>
+								<a href="" class="cards">
+									<div class="cards card6">
+										<img src="./src/assets/playlist/6.jpeg" alt="">
+										<span>Sertanejo</span>
+									</div>
+								</a>
+							</section>
+						</div>
+
+					</div>
+				</div>
+				<div id="artist-results" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img id="artist-img" class="artist-img" />
+                                <div class="play">
+                                    <span class="fa fa-solid fa-play"></span>
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -93,5 +161,6 @@
 			<button>Inscreva-se grátis</button>
 		</div>
 	</footer>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
