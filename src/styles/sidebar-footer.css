@@ -11,7 +11,7 @@ body {
 	padding: 8px;
 }
 
-.sidebar__block {
+.sidebar .container {
 	background-color: #121212;
 	border-radius: 8px;
 }
@@ -60,18 +60,18 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	height: 59vh;
 	margin-top: 8px;
-	padding: 8px 16px;
 	color: #b3b3b3;
 	font-size: 14px;
 	font-family: var(--font-text);
 }
 
-
 .sidebar .library__header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 8px 16px;
 }
 
 .sidebar .library__header button {
@@ -118,7 +118,16 @@ body {
 	cursor: pointer;
 }
 
-.sidebar .section-playlist {
+.sidebar .library__content {
+	padding: 0 8px;
+	max-height: 30vh;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.sidebar .library__content .block {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -129,28 +138,28 @@ body {
 	color: #b3b3b3;
 }
 
-.sidebar .section-playlist__content {
+.sidebar .library .block__content {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
-.sidebar .section-playlist__content .text {
+.sidebar .library .block__content .text {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 	color: #ffffff;
 }
 
-.sidebar .section-playlist__content .title {
+.sidebar .library .block__content .title {
 	font-size: 16px;
 	font-family: var(--font-title);
 }
 
-.sidebar .section-playlist__content button {
+.sidebar .library .block__content button {
 	display: flex;
 	justify-content: center;
-	width: 114px;
+	width: 60%;
 	padding: 8px;
 	border: 0;
 	border-radius: 20px;
@@ -162,21 +171,25 @@ body {
 	cursor: pointer;
 }
 
-.sidebar .library .cookies {
-	margin: 30px 0;
+.sidebar .library__footer {
+	padding: 8px 16px 20px;
 }
 
-.sidebar .library .cookies a {
+.sidebar .library__footer .cookies {
+	margin: 20px 0;
+}
+
+.sidebar .library__footer .cookies a {
 	color: #b3b3b3;
 	font-size: 12px;
 	text-decoration: none;
 }
 
-.sidebar .library .cookies a:hover {
+.sidebar .library__footer .cookies a:hover {
 	text-decoration: underline;
 }
 
-.sidebar .library .language button {
+.sidebar .library__footer .language button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -190,7 +203,7 @@ body {
 	font-size: 14px;
 	font-family: var(--font-title);
 }
-.sidebar .library .language button:hover {
+.sidebar .library__footer .language button:hover {
 	width: 185px;
 	font-size: 15px;
 	border: 1px solid #ffffff;
