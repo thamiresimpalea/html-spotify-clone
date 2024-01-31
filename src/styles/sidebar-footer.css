@@ -192,7 +192,6 @@ body {
 .sidebar .library__footer .language button {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	width: 175px;
 	padding: 8px;
 	gap: 5px;
@@ -204,8 +203,7 @@ body {
 	font-family: var(--font-title);
 }
 .sidebar .library__footer .language button:hover {
-	width: 185px;
-	font-size: 15px;
+	transform: scale(1.02);
 	border: 1px solid #ffffff;
 	cursor: pointer;
 }
